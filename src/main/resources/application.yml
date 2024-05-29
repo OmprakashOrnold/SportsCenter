@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: SportsCenter
+  datasource:
+    url: jdbc:mysql://localhost:3309/sportscenter
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+server:
+  port: 9090
+logging:
+  level:
+    com.ecommerce.service.impl: OFF
